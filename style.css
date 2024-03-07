@@ -56,6 +56,7 @@ p {
   background-color: var(--Orange);
   margin: auto;
   transition: 0.5s;
+  cursor: pointer;
 }
 .header-left nav ul li:hover::after {
   width: 100%; 
@@ -181,12 +182,15 @@ margin-left: 2em;
  object-fit: cover;
  width: 100%;
 }
+ .thumbnail img.active{
+  border: 3px solid var(--Orange);
+  opacity: 0.6;
+ }
  .thumbnail img:active{
   border: 3px solid var(--Orange);
   opacity: 0.6;
  }
 /* left side of the container */
-
 .container-left h3 {
   color: var(--Orange);
 }
@@ -200,9 +204,6 @@ margin-left: 2em;
 }
 .container-left .price {
   margin-bottom: 2em;
-  display: flex;
- align-items: center;
- width: 100%;
 }
 .price .dollar {
   font-size: large;
@@ -210,7 +211,6 @@ margin-left: 2em;
   text-decoration: line-through;
   color: var(--Grayish-blue);
   width: 50%;
-text-align: right;
 }
 .top {
   display: flex;
@@ -249,7 +249,7 @@ text-align: right;
   border-radius: 5px;
   cursor: pointer;
 }
-.colored-btn:hover {
+.colored-btn:active {
   background-color: var(--Pale-orange);
 }
 .foot img:hover {
@@ -258,7 +258,7 @@ text-align: right;
 }
 .colored-btn img {
   margin-right: 20px;
-  color: white;
+  background-color: var(--Orange);
 }
 button {
   font-family: "Kumbh Sans", sans-serif;
@@ -271,10 +271,13 @@ button {
     margin: 0;
     padding: 0;
   }
+.header{
+  margin: 0 1em;
+}
   nav {
     display: none;
   }
-  
+
   .product-wrapper{
     display: flex;
     flex-direction: column;
@@ -352,5 +355,8 @@ button {
   }
   hr{
     display: none;
+  }
+  .dollar{
+    text-align: right;
   }
 }
