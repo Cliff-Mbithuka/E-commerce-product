@@ -19,40 +19,69 @@
   <body>
     <!-- Header section -->
     <div class="box">
-      <div class="header">
+      <header class="header">
         <div class="header-left">
           <a><img src="images/logo.svg" alt="" /></a>
           <nav>
             <ul>
-              <li>Collections</li>
-              <li>Men</li>
-              <li>Women</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li><a href="">Collections</a></li>
+              <li><a href="">Men</a></li>
+              <li><a href="">Women</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
             </ul>
           </nav>
         </div>
         <div class="header-right">
-         <img src="images/icon-cart.svg" alt="" />
-          <img src="images/image-avatar.png" alt="" class="image-avatar"/>
+          <a href=""><img src="images/icon-cart.svg" alt="" class="cart" /></a>
+          <span class="quality-label">3</span>
+          <div>
+            <a href=""
+              ><img src="images/image-avatar.png" alt="" class="image-avatar"/></a>
+          </div>
+          <div class="cart-box">
+            <p class="box-header">Cart</p>
+            <div class="product-content">
+              <img src="images/image-product-1-thumbnail.jpg" alt="" />
+              <div class="product-details">
+                <p class="product-text">Fall Limited Edition Sneakers</p>
+                <p class="price">
+                  $125.00 <span>x</span><span class="times">3</span>
+                  <span class="total">$375.00</span>
+                </p>
+              </div>
+              <div class="trash">
+                <img src="images/icon-delete.svg" alt="" />
+              </div>
+            </div>
+            <div class="cart-empty">
+              <p>Your Cart is Empty</p>
+            </div>
+          </div>
         </div>
-        
-      </div>
-      <hr>
+      </header>
+      <hr />
 
+      <!------- Product Page ------------->
       <div class="container">
+       <div class="product-wrapper">
         <div class="container-right">
-          <img src="images/image-product-1.jpg" alt="" class="product" />
-          <div class="thumbnail">
-            <div><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
-            <div><img src="images/image-product-2-thumbnail.jpg" alt=""></div>
-            <div><img src="images/image-product-3-thumbnail.jpg" alt=""></div>
-            <div><img src="images/image-product-4-thumbnail.jpg" alt=""></div>
+          <div class="product-image">
+            <img src="images/image-product-1.jpg" alt="" class="large-image"/>
+            <div class="thumbnail">
+              <div><img src="images/image-product-1-thumbnail.jpg" alt="" /></div>
+              <div><img src="images/image-product-2-thumbnail.jpg" alt="" /></div>
+              <div><img src="images/image-product-3-thumbnail.jpg" alt="" /></div>
+              <div><img src="images/image-product-4-thumbnail.jpg" alt="" /></div>
+            </div>
           </div>
         </div>
         <div class="container-left">
-          <h3>Sneaker Company</h3>
-          <h1>Fall Limited Edition<br> Sneakers</h1>
+          <h3>SNEAKER COMPANY</h3>
+          <h1>
+            Fall Limited Edition<br />
+            Sneakers
+          </h1>
           <p>
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
@@ -61,15 +90,25 @@
           <div class="price">
             <div class="top">
               <h1>$125.00</h1>
-             <button>50%</button>
+              <span>50%</span>
             </div>
-            <p>$250.00</p>
+            <div class="dollar">
+              <p>$250.00</p>
+            </div>
           </div>
           <div class="foot">
-            <button class="clear-btn"><img src="images/icon-minus.svg" alt="" />0<img src="images/icon-plus.svg" alt="" /></button>
-            <button class="colored-btn"><img src="images/icon-cart.svg" alt="" />Add to cart</button>
+            <button class="clear-btn">
+              <img src="images/icon-minus.svg" alt="" />0<img
+                src="images/icon-plus.svg"
+                alt=""
+              />
+            </button>
+            <button class="colored-btn">
+              <img src="images/icon-cart.svg" alt="" />Add to cart
+            </button>
           </div>
         </div>
+       </div>
       </div>
     </div>
   </body>
