@@ -90,7 +90,7 @@ thumbImage.forEach((img, indx) => {
 
 imageLarge.addEventListener("click", () => {
     modalEl.style.display = "block";
-});
+});                 
 
 closeModal.addEventListener("click", () => {
     modalEl.style.display = "none";
