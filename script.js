@@ -1,10 +1,10 @@
-const cartIcon = document.querySelector(".cart");
 const cartBox = document.querySelector(".cart-box");
 const normalPrice = document.querySelector(".normal-price");
 const addCart = document.querySelector(".colored-btn");
 const quantityLabel = document.querySelector(".quality-label");
 const productContainer = document.querySelector(".product-content");
 const cartEmpty = document.querySelector(".cart-empty");
+const cartIcon = document.querySelector(".cart");
 
 // increament and decreament
 const qty = document.querySelector(".qty-number");
@@ -46,8 +46,10 @@ incr.addEventListener("click", () => {
     qty.textContent = totalQty;
 });
 
+
 // show and hide the card
 cartIcon.addEventListener("click", () => {
+    
     cartBox.classList.add("display");
 });
 
